@@ -1,0 +1,31 @@
+{
+  "name": "douban-spider",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuhang04210/douban-spider.git"
+  },
+  "keywords": [
+    "node",
+    "superagent",
+    "cheerio",
+    "fs-extra"
+  ],
+  "author": "yuhang <377849759@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuhang04210/douban-spider/issues"
+  },
+  "homepage": "https://github.com/yuhang04210/douban-spider#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fs-extra": "^5.0.0",
+    "superagent": "^3.8.2"
+  }
+}
