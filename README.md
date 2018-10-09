@@ -1,11 +1,14 @@
 # node爬虫：爬取豆瓣电影前250海报图
 
-> npm i
-> npm start
+
+## 一、 先执行一次包更新
+`npm install`
+
+## 二、 开发执行
+`npm start`
 
 
-
-## 一、实现步骤
+## 三、实现步骤
 
 1. 确定目标页面（豆瓣）
 2. 使用superagent库来获取页面
@@ -13,7 +16,7 @@
 4. 保存图片到本地
 
 
-## 二、开始编写爬取海报图
+## 四、开始编写爬取海报图
 
 
 本项目需要使用的库
@@ -28,7 +31,7 @@ npm i superagent cheerio fs-extra --save
 - cheerio：为服务器特别定制的，快速、灵活、实施的jQuery核心实现
 - fs-extra： 丰富了fs模块，同时支持async/await
 
-### 2.1 请求URL获取HTML
+### 4.1 请求URL获取HTML
 
 使用superagent发起请求并打印出页面内容
 
@@ -50,7 +53,7 @@ request
 ```
 
 
-### 2.2 获取图片地址
+### 4.2 获取图片地址
 
 获取到单个图片URL后，我们可以通过图片的`src`属性去拿到真实的图片地址，然后实现下载保存
 
@@ -73,7 +76,7 @@ async function getPosterUrls () {
 
 ```
 
-### 2.3 保存图片到本地
+### 4.3 保存图片到本地
 
 现在我们就来实现下载保存图片的方法，这儿我们使用了`stream`(流) 来保存图片
 
@@ -94,7 +97,7 @@ async function getPoster (url) {
 
 
 
-## 三、参考链接
+## 五、参考链接
 
 - 源码：https://github.com/yuhang04210/douban-spider.git
 - superagent： http://visionmedia.github.io/superagent/
