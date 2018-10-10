@@ -33,7 +33,7 @@ npm i superagent cheerio fs-extra --save
 
 ### 4.1 请求URL获取HTML
 
-使用superagent发起请求并打印出页面内容
+使用superagent发起请求获取页面内容
 
 ```javascript
 const request = require('superagent')
@@ -42,14 +42,8 @@ const fs = require('fs-extra')
 
 let url = 'https://movie.douban.com/top250?start=0';
 
+request.get(url + i * PAGE_SIZE);
 
-request
-  .get(url + '1')
-  .then(function (res) {
-    console.log(res.text)
-  })
-
-// 你就可以看见HTML内容打印到了控制台
 ```
 
 
